@@ -2,7 +2,10 @@ SmalltalkCISpec {
   #loading : [
     SCIMetacelloLoadSpec {
       #baseline : 'OrderedDictionary',
-      #directory : 'src'
+      #load : [ 'Tests' ],
+      #directory : 'src',
+      #onWarningLog : true,
+      #platforms : [ #gemstone ]
     }
   ]
 }
