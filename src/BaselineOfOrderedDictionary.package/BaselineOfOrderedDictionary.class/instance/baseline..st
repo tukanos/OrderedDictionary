@@ -12,4 +12,14 @@ baseline: spec
 			"Groups"
 			spec
 				group: 'Core' with: #('Ordered-Dictionary');
-				group: 'Tests' with: #('Ordered-Dictionary-Tests') ]
+				group: 'Tests' with: #('Ordered-Dictionary-Tests') ].
+	spec
+		for: #pharo
+		do: [
+			"Packages"
+			spec
+				package: 'Ordered-Pharo-Dictionary' with: [ spec requires: #('Ordered-Dictionary') ].
+
+			"Groups"
+			spec
+				group: 'Core' with: #('Ordered-Pharo-Dictionary') ]
